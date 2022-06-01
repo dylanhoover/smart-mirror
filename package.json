@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.6.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -44,7 +45,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.5.1",
-    "electron": "^16.0.5",
+    "electron": "^16.2.8",
     "electron-is-dev": "^2.0.0",
     "wait-on": "^6.0.0"
   }

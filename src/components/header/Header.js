@@ -1,6 +1,7 @@
 import React, {useContext } from 'react';
 import { LayoutContext } from "../../Context"
 import { Switch } from '@mui/material'
+import './Header.css'
 
 export default function Header(){
     const [layout, setLayout] = useContext(LayoutContext)
@@ -12,7 +13,7 @@ export default function Header(){
 
     return(
         <div>
-            <h1>Hello</h1>
+            <h1 className='header'>How are you today</h1>
             <Switch
              onChange={handleSwitch}
             />

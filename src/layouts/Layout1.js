@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Grid, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import ReactWeather, { useOpenWeather } from 'react-open-weather';
+import ModularComponent from "../components/ModularComponent/ModularComponent";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -13,27 +13,13 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Layout1() {
 
-    const { data, isLoading, errorMessage } = useOpenWeather({
-        key: '297bde95ba03dd2c1443c9797becc09b',
-        lat: '-37.814',
-        lon: '144.96332',
-        lang: 'en',
-        units: 'metric',
-    });
+    
 
   return (
     <Box>
       <Grid container spacing={2}>
         <Grid item xs={8}>
-          <ReactWeather
-            isLoading={isLoading}
-            errorMessage={errorMessage}
-            data={data}
-            lang="en"
-            locationLabel="Munich"
-            unitsLabels={{ temperature: 'C', windSpeed: 'Km/h' }}
-            showForecast
-            />
+          <ModularComponent/>
         </Grid>
         <Grid item xs={4}>
           <Item>xs=4</Item>
