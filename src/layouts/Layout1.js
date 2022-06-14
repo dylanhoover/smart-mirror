@@ -2,6 +2,7 @@ import * as React from "react";
 import { Box, Grid, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import ModularComponent from "../components/ModularComponent/ModularComponent";
+import WeatherComponent from "../components/CustomComponents/WeatherComponent";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -22,13 +23,13 @@ export default function Layout1() {
           <ModularComponent/>
         </Grid>
         <Grid item xs={4}>
-          <Item>xs=4</Item>
+          <ModularComponent/>
         </Grid>
         <Grid item xs={4}>
-          <Item>xs=4</Item>
+          <ModularComponent/>
         </Grid>
         <Grid item xs={8}>
-          <Item>xs=8</Item>
+          <ModularComponent/>
         </Grid>
       </Grid>
     </Box>
